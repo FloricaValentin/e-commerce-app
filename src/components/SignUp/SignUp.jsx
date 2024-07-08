@@ -27,11 +27,11 @@ const SignUp = (props) => {
         <br />
         <form className='form-group' onSubmit={handleSubmit}>
           <label htmlFor='Email'>Email:</label>
-          <input type="text" className='form-control' required 
+          <input type="email" className='form-control' required 
           onChange={(e)=> setEmail(e.target.value)} value={email} />
           <br />
           <label htmlFor='Password'>Password:</label> 
-          <input type="text" className='form-control' required 
+          <input type="password" className='form-control' required 
           onChange={(e)=> setPassword(e.target.value)} value={password}/>
           <br />
           <button type="submit" className="btn btn-success btn-md addbutton">Register </button>
